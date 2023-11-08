@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-color: #000f17;
+}
+.header-1 {
+background-color: #000f17;
+    color: #6321ff;
+    text-align: center;
+    padding: 3px;
+}
+.header-2 {
+    border-bottom: 2px solid #4c00ff; /* Altere a cor e a espessura conforme necessário */
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+.text {
+    flex: 1;
+    text-align: center;
+    color: #ffffff;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+/* Estilos para separar o texto e a imagem */
+.image img {
+    max-width: 380px;
+    max-height: 380px;
+}
+.header-3 {
+    border-bottom: 2px solid #4c00ff;
+}
+@media screen and (max-width: 767px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .text {
+        font-size: 16px; /* Reduza o tamanho da fonte para melhor ajuste em telas menores */
+    }
+
+    .image {
+        margin-top: 20px; /* Adicione margem superior para separar o texto e a imagem */
+    }
+}
+.content2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+.content3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+.mySwiper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px 0;
+}
+.container {
+    margin: 0 10px;
+    overflow: hidden;
+}
+.swiper-slide {
+    font-size: 18px;
+    width: 3000px;
+}
+.box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box img {
+    width: 50%;
+    height: 340px;
+    object-fit: cover;
+}
+.swiper-pagination-bullet {
+    background: #4c00ff;
+    width: 9px;
+    height: 9px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons div {
+    margin: 0 25px; /* Adiciona espaços horizontais entre as imagens */
+}
+
+@media screen and (max-width: 767px) {
+    .social-icons {
+        flex-direction: column; /* Empilhar as imagens verticalmente em telas menores */
+        align-items: center; /* Centralizar as imagens na vertical */
+    }
+
+    .social-icons div {
+        margin: 10px 0; /* Adiciona espaços verticais entre as imagens */
+    }
+}
+.img-hover {
+    transition: transform 0.26s;
+}
+.img-hover:hover {
+    transform: scale(1.2);
+}
+.logo {
+    width: 5%;
+    height: 5%;
+}
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #4c00ff;
+    color: #ffffff;
+}
